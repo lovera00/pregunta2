@@ -1,4 +1,4 @@
-package com.pregunta2.users.repositories;
+package com.pregunta2.users.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,12 +15,19 @@ public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   @NotBlank
   @Size(max = 100)
   @Column(unique = true)
   private String email;
+
   @NotBlank
   @Size(min = 8, max = 100)
   private String password;
   private Boolean active;
+
+  public User(String email, String password){
+    this.email = email;
+    this.password = password;
+  }
 }
