@@ -24,7 +24,7 @@ public class User {
   @NotBlank
   @Size(min = 8, max = 100)
   private String password;
-  private Boolean active;
+  private Boolean active = true;
 
   public User(String email, String password){
     this.email = email;

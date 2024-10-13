@@ -1,4 +1,4 @@
-package com.pregunta2.pregunta2;
+package com.pregunta2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
